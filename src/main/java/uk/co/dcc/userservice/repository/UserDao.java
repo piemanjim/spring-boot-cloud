@@ -14,4 +14,6 @@ public interface UserDao {
 	public User save(User user);
 	
 	public User findOne(int id);
+	
+	public User deleteById(int id);
 }
