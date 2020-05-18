@@ -4,7 +4,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
-import uk.co.dcc.restwebservices.model.GreetingBean;
+import uk.co.dcc.restwebservices.model.Greeting;
 
 @RestController
 public class SimpleGreetingController {
@@ -17,14 +17,14 @@ public class SimpleGreetingController {
 	
 	// Complex bean
 	@GetMapping("/hello-user-bean")
-	public GreetingBean getGreetingBean() {
-		return new GreetingBean("Welcome, User!");
+	public Greeting getGreetingBean() {
+		return new Greeting("Welcome, User!");
 	}
 	
 	// Path variable
 	@GetMapping("/hello-user/{name}")
-	public GreetingBean getGreetingBean(@PathVariable String name) {
-		return new GreetingBean(String.format("Welcome, %s", name));
+	public Greeting getGreetingBean(@PathVariable String name) {
+		return new Greeting(String.format("Welcome, %s", name));
 	}
 
 }

@@ -1,6 +1,6 @@
 package uk.co.dcc.restwebservices.model;
 
-public class GreetingBean {
+public class Greeting {
 
 	private String message;
 	
@@ -8,7 +8,7 @@ public class GreetingBean {
 		this.message = message;
 	}
 
-	public GreetingBean(String message) {
+	public Greeting(String message) {
 		this.message = message;
 	}
 
