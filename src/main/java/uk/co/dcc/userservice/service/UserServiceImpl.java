@@ -1,11 +1,11 @@
-package uk.co.dcc.restwebservices.service;
+package uk.co.dcc.userservice.service;
 
 import java.util.List;
 
 import org.springframework.stereotype.Service;
 
-import uk.co.dcc.restwebservices.repository.UserDao;
-import uk.co.dcc.restwebservices.repository.model.User;
+import uk.co.dcc.userservice.repository.UserDao;
+import uk.co.dcc.userservice.repository.model.User;
 
 @Service
 public class UserServiceImpl implements UserService {
