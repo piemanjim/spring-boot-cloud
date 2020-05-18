@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
+import uk.co.dcc.userservice.exception.UserNotFoundException;
 import uk.co.dcc.userservice.repository.entity.User;
 import uk.co.dcc.userservice.service.UserService;
 
@@ -30,7 +31,11 @@ public class UserController {
 	
 	@GetMapping("/users/{id}")
 	public User getUserById(@PathVariable("id") int id) {
-		return userService.getUserById(id);
+		User user = userService.getUserById(id);
+		if(user == null) {
+			throw new UserNotFoundException("Unable to find user with id: " + id);
+		}
+		return user;
 	}
 	
 	@PostMapping("/users")
