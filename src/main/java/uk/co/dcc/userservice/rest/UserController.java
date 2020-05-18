@@ -1,4 +1,4 @@
-package uk.co.dcc.restwebservices.rest;
+package uk.co.dcc.userservice.rest;
 
 import java.net.URI;
 import java.util.List;
@@ -11,8 +11,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
-import uk.co.dcc.restwebservices.repository.model.User;
-import uk.co.dcc.restwebservices.service.UserService;
+import uk.co.dcc.userservice.repository.model.User;
+import uk.co.dcc.userservice.service.UserService;
 
 @RestController
 public class UserController {
