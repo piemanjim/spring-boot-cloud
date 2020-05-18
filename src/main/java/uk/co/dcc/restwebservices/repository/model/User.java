@@ -1,4 +1,4 @@
-package uk.co.dcc.restwebservices.model;
+package uk.co.dcc.restwebservices.repository.model;
 
 import java.util.Date;
 

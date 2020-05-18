@@ -1,4 +1,4 @@
-package uk.co.dcc.restwebservices;
+package uk.co.dcc.userservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

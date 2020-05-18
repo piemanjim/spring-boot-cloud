@@ -6,7 +6,7 @@ import java.util.List;
 
 import org.springframework.stereotype.Repository;
 
-import uk.co.dcc.restwebservices.model.User;
+import uk.co.dcc.restwebservices.repository.model.User;
 
 @Repository
 public class UserDaoImpl implements UserDao {
@@ -21,10 +21,12 @@ public class UserDaoImpl implements UserDao {
 		users.add(new User(4, "Dave", new Date()));
 	}
 	
+	@Override
 	public List<User> findAll() {
 		return users;
 	}
 	
+	@Override
 	public User save(User user) {
 		if(user.getId() == null) {
 			user.setId(++userCount);
@@ -33,6 +35,7 @@ public class UserDaoImpl implements UserDao {
 		return user;
 	}
 	
+	@Override
 	public User findOne(int id) {
 		for(User user: users) {
 			if(user.getId() == id) {

@@ -4,7 +4,7 @@ import java.util.List;
 
 import org.springframework.stereotype.Repository;
 
-import uk.co.dcc.restwebservices.model.User;
+import uk.co.dcc.restwebservices.repository.model.User;
 
 @Repository
 public interface UserDao {
