@@ -6,7 +6,7 @@ import java.util.List;
 
 import org.springframework.stereotype.Repository;
 
-import uk.co.dcc.userservice.repository.model.User;
+import uk.co.dcc.userservice.repository.entity.User;
 
 @Repository
 public class UserDaoImpl implements UserDao {

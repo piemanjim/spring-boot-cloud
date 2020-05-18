@@ -1,4 +1,4 @@
-package uk.co.dcc.userservice.repository.model;
+package uk.co.dcc.userservice.repository.entity;
 
 import java.util.Date;
 

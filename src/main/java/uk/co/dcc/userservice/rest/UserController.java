@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
-import uk.co.dcc.userservice.repository.model.User;
+import uk.co.dcc.userservice.repository.entity.User;
 import uk.co.dcc.userservice.service.UserService;
 
 @RestController
